@@ -26,6 +26,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         
-        UserDefaults.standard.register(defaults: [applicationDataKey: ["com.apple.TextEdit"]])
+        UserDefaults.setUp()
     }
 }

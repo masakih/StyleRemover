@@ -17,6 +17,6 @@ struct Configuration {
     
     private var targets: [String] {
         
-        UserDefaults.standard.array(forKey: applicationDataKey) as? [String] ?? []
+        UserDefaults.standard.applicationData
     }
 }

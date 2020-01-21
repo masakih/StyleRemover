@@ -9,9 +9,19 @@
 import Foundation
 import Combine
 
-let applicationDataKey = "Application Data"
+private let applicationDataKey = "Application Data"
+private let isEnablbedKey = "Is enabled"
 
 extension UserDefaults {
+    
+    static func setUp() {
+        
+        UserDefaults.standard.register(defaults:
+            [
+                applicationDataKey: ["com.apple.TextEdit"],
+            ]
+        )
+    }
     
     @objc dynamic var applicationData: [String] {
         
