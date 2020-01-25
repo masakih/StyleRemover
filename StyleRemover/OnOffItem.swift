@@ -22,16 +22,22 @@ struct OnOffItem: StatusItem {
     
     init() {
         
-        menuItem.title = self.title
         menuItem
             .actionPublisher()
             .sink(receiveValue: toggle)
             .store(in: &cancellalbes)
+        
+        refreshItem()
     }
     
     private func toggle(_: Any) {
         
         UserDefaults.standard.isEnabled.toggle()
+        
+        refreshItem()
+    }
+    
+    private func refreshItem() {
         
         menuItem.title = title
         menuItem.state = UserDefaults.standard.isEnabled ? .on : .off
