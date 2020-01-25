@@ -78,6 +78,7 @@ class PreferencePanelController: NSWindowController {
             
             guard response == .OK, let url = openPanel.url else { return }
             guard let identifier = Bundle(url: url)?.bundleIdentifier else { return }
+            guard !self.applicatins.map({ $0.idetifier }).contains(identifier) else { return }
             
             UserDefaults.standard.applicationData += [identifier]
         }
