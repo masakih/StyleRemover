@@ -59,9 +59,19 @@ class PreferencePanelController: NSWindowController {
         .store(in: &cancellables)
     }
     
+    override func keyDown(with event: NSEvent) {
+        
+        guard !event.modifierFlags.contains(.command) else { return }
+        
+        let deleteKeyCode = UInt16(51)
+        
+        if event.keyCode == deleteKeyCode {
+            
+            removeSelection(nil)
+        }
+    }
     
-    
-    @IBAction private func append(_ sender: Any) {
+    @IBAction private func append(_ sender: Any?) {
         
         guard let window = window else {
             
@@ -85,7 +95,7 @@ class PreferencePanelController: NSWindowController {
         }
     }
     
-    @IBAction private func removeSelection(_ sender: Any) {
+    @IBAction private func removeSelection(_ sender: Any?) {
         
         guard tableView.selectedRow >= 0 else { return }
                 
