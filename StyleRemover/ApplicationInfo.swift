@@ -15,7 +15,12 @@ struct ApplicationData {
         
     let idetifier: String
     
-    var icon: NSImage {
+    init(identifier: String) {
+        
+        self.idetifier = identifier
+    }
+    
+    private(set) lazy var icon: NSImage = {
         
         guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: idetifier) else {
             
@@ -30,9 +35,9 @@ struct ApplicationData {
         return resource.customIcon ??
             resource.effectiveIcon as? NSImage ??
             NSImage(named: NSImage.applicationIconName)!
-    }
+    }()
     
-    var localizedName: String {
+    private(set) lazy var localizedName: String = {
         
         guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: idetifier) else {
             
@@ -45,9 +50,9 @@ struct ApplicationData {
             appBundle?.localizedInfoDictionary?["CFBundleDisplayName"] as? String ??
             appBundle?.localizedInfoDictionary?["CFBundleName"] as? String ??
             unknownAppName
-    }
+    }()
     
-    private var localizedFileName: String? {
+    private lazy var localizedFileName: String? = {
                 
         guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: idetifier) else {
             
@@ -57,5 +62,5 @@ struct ApplicationData {
         guard let resource = try? url.resourceValues(forKeys: [.localizedNameKey]) else { return nil }
         
         return resource.localizedName
-    }
+    }()
 }
