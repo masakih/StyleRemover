@@ -17,7 +17,7 @@ struct OnOffItem: StatusItem {
     
     private var title: String {
         
-        UserDefaults.standard.isEnabled ? "Enable" : "Disable"
+        UserDefaults.standard.isEnabled ? "Style remove: Enabled" : "Style remove: Disabled"
     }
     
     init() {

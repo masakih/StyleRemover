@@ -13,16 +13,16 @@ private let unknownAppName = "Unknown Application"
 
 struct ApplicationData {
         
-    let idetifier: String
+    let identifier: String
     
     init(identifier: String) {
         
-        self.idetifier = identifier
+        self.identifier = identifier
     }
     
     private(set) lazy var icon: NSImage = {
         
-        guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: idetifier) else {
+        guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: identifier) else {
             
             return NSImage(named: NSImage.applicationIconName)!
         }
@@ -39,7 +39,7 @@ struct ApplicationData {
     
     private(set) lazy var localizedName: String = {
         
-        guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: idetifier) else {
+        guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: identifier) else {
             
             return unknownAppName
         }
@@ -54,7 +54,7 @@ struct ApplicationData {
     
     private lazy var localizedFileName: String? = {
                 
-        guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: idetifier) else {
+        guard let url = NSWorkspace.shared.urlForApplication(withBundleIdentifier: identifier) else {
             
             return unknownAppName
         }
