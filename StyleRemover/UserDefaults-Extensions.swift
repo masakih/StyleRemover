@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 private let applicationDataKey = "Application Data"
-private let isEnablbedKey = "Is enabled"
+private let isEnablbedKey = "Is Enabled"
 
 extension UserDefaults {
     
