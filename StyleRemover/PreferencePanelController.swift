@@ -63,14 +63,24 @@ class PreferencePanelController: NSWindowController {
     
     @IBAction private func append(_ sender: Any) {
         
+        guard let window = window else {
+            
+            fatalError("Has no window.")
+        }
+        
         let openPanel = NSOpenPanel()
         openPanel.directoryURL = Folders().applicationFolder
         openPanel.allowedFileTypes = ["app"]
+        openPanel.prompt = "Choose"
+        openPanel.message = "Choose Target Application"
         
-        guard openPanel.runModal() == .OK, let url = openPanel.url else { return }
-        guard let identifier = Bundle(url: url)?.bundleIdentifier else { return }
-        
-        UserDefaults.standard.applicationData += [identifier]
+        openPanel.beginSheetModal(for: window) { response in
+            
+            guard response == .OK, let url = openPanel.url else { return }
+            guard let identifier = Bundle(url: url)?.bundleIdentifier else { return }
+            
+            UserDefaults.standard.applicationData += [identifier]
+        }
     }
     
     @IBAction private func removeSelection(_ sender: Any) {
