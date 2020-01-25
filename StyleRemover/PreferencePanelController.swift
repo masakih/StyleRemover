@@ -73,6 +73,7 @@ class PreferencePanelController: NSWindowController {
         openPanel.allowedFileTypes = ["app"]
         openPanel.prompt = "Choose"
         openPanel.message = "Choose Target Application"
+        openPanel.delegate = self
         
         openPanel.beginSheetModal(for: window) { response in
             
@@ -108,5 +109,24 @@ extension PreferencePanelController: NSTableViewDataSource, NSTableViewDelegate 
         cell?.applicationData = applicatins[row]
         
         return cell
+    }
+}
+
+extension PreferencePanelController: NSOpenSavePanelDelegate {
+    
+    func panel(_ sender: Any, shouldEnable url: URL) -> Bool {
+        
+        if let re = try? url.resourceValues(forKeys: [.isApplicationKey]),
+            let isApp = re.isApplication,
+            !isApp {
+            
+            return true
+        }
+        
+        guard let identifier = Bundle(url: url)?.bundleIdentifier else { return false }
+        
+        return !applicatins
+            .map { $0.idetifier }
+            .contains(identifier)
     }
 }
