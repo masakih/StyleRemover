@@ -13,7 +13,7 @@ struct Folders {
     
     private func folder(_ type: FileManager.SearchPathDirectory) -> URL? {
         
-        FileManager.default.urls(for: type, in: .allDomainsMask).first
+        FileManager.default.urls(for: type, in: .systemDomainMask).first
     }
     
     var applicationFolder: URL? {
