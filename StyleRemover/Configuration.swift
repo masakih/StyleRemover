@@ -12,7 +12,7 @@ struct Configuration {
     
     func isTargetApplication(_ identifire: String) -> Bool {
         
-        targets.contains(identifire)
+        UserDefaults.standard.isEnabled && targets.contains(identifire)
     }
     
     private var targets: [String] {
