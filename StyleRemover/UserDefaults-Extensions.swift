@@ -19,6 +19,7 @@ extension UserDefaults {
         UserDefaults.standard.register(defaults:
             [
                 applicationDataKey: ["com.apple.TextEdit"],
+                isEnablbedKey: true,
             ]
         )
     }
@@ -34,6 +35,19 @@ extension UserDefaults {
         set {
                         
             set(newValue, forKey: applicationDataKey)
+        }
+    }
+    
+    @objc dynamic var isEnabled: Bool {
+        
+        get {
+            
+            bool(forKey: isEnablbedKey)
+        }
+        
+        set {
+            
+            set(newValue, forKey: isEnablbedKey)
         }
     }
 }
