@@ -61,7 +61,7 @@ class PreferencePanelController: NSWindowController {
     
     
     
-    @IBAction func append(_ sender: Any) {
+    @IBAction private func append(_ sender: Any) {
         
         let openPanel = NSOpenPanel()
         openPanel.directoryURL = Folders().applicationFolder
@@ -73,7 +73,7 @@ class PreferencePanelController: NSWindowController {
         UserDefaults.standard.applicationData += [identifier]
     }
     
-    @IBAction func removeSelection(_ sender: Any) {
+    @IBAction private func removeSelection(_ sender: Any) {
         
         guard tableView.selectedRow >= 0 else { return }
                 
