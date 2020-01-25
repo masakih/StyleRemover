@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "MenuBarIcon.pdf",
+      "filename" : "MenuBarIconDisabled.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "MenuBarIcon-1.pdf",
+      "filename" : "MenuBarIconDisabled-1.png",
       "scale" : "2x"
     },
     {
@@ -20,6 +20,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "preserves-vector-representation" : true
+    "template-rendering-intent" : "original"
   }
 }

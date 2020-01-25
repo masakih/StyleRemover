@@ -24,6 +24,7 @@
 		F4A6037323D3F74C00E73A91 /* PreferenceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6037223D3F74C00E73A91 /* PreferenceItem.swift */; };
 		F4A6037523D3F86C00E73A91 /* ActionPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6037423D3F86C00E73A91 /* ActionPublisher.swift */; };
 		F4A6037723D40E6800E73A91 /* Folders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6037623D40E6800E73A91 /* Folders.swift */; };
+		F4A603A323D7453E00E73A91 /* OnOffItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A603A223D7453E00E73A91 /* OnOffItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F4A6037223D3F74C00E73A91 /* PreferenceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceItem.swift; sourceTree = "<group>"; };
 		F4A6037423D3F86C00E73A91 /* ActionPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionPublisher.swift; sourceTree = "<group>"; };
 		F4A6037623D40E6800E73A91 /* Folders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folders.swift; sourceTree = "<group>"; };
+		F4A603A223D7453E00E73A91 /* OnOffItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnOffItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */,
 				F48D38D823CDDDAB00799A3D /* StatusBar.swift */,
 				F48D38DA23CDDDE400799A3D /* StatusItem.swift */,
+				F4A603A223D7453E00E73A91 /* OnOffItem.swift */,
 				F4A6037223D3F74C00E73A91 /* PreferenceItem.swift */,
 				F48D38DC23CDDE6100799A3D /* QuitItem.swift */,
 				F48D38EA23CF2E2C00799A3D /* ApplicationInfo.swift */,
@@ -235,6 +238,7 @@
 				F4A6037523D3F86C00E73A91 /* ActionPublisher.swift in Sources */,
 				F48D38EB23CF2E2C00799A3D /* ApplicationInfo.swift in Sources */,
 				F48D38E323CDFE4A00799A3D /* Configuration.swift in Sources */,
+				F4A603A323D7453E00E73A91 /* OnOffItem.swift in Sources */,
 				F4A6037323D3F74C00E73A91 /* PreferenceItem.swift in Sources */,
 				F4A6037723D40E6800E73A91 /* Folders.swift in Sources */,
 				F48D38DB23CDDDE400799A3D /* StatusItem.swift in Sources */,

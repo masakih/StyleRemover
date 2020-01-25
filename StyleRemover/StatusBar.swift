@@ -7,17 +7,22 @@
 //
 
 import Cocoa
+import Combine
 
-struct StatusBar {
+class StatusBar {
     
     private let myStatusBar = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     private let menu = NSMenu()
     
     private let items: [StatusItem]
     
+    private var cancellalbes: [AnyCancellable] = []
+    
     init() {
         
         items = [
+            OnOffItem(),
+            SeparatorItem(),
             PreferenceItem(),
             SeparatorItem(),
             QuitItem()
@@ -26,6 +31,20 @@ struct StatusBar {
         items.reversed().forEach { $0.enter(menu) }
         
         myStatusBar.menu = menu
-        myStatusBar.button?.image = NSImage(named: "MenuBarIconTemplate")
+        myStatusBar.button?.image = icon
+        
+        UserDefaults.standard
+            .publisher(for: \.isEnabled)
+            .receive(on: DispatchQueue.main)
+            .sink { enabled in
+                
+                self.myStatusBar.button?.image = self.icon
+        }
+        .store(in: &cancellalbes)
+    }
+    
+    private var icon: NSImage? {
+        
+        UserDefaults.standard.isEnabled ? NSImage(named: "MenuBarIconTemplate") : NSImage(named: "MenuBarIconDisabled")
     }
 }
