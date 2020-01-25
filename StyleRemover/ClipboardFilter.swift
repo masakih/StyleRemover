@@ -27,7 +27,7 @@ final class ClipboardFilter {
     }
 }
 
-func noneStyled(_ pType: NSPasteboard.PasteboardType) -> Bool {
+func noneStyledType(_ pType: NSPasteboard.PasteboardType) -> Bool {
     
     let hints = [
         "rtf",
@@ -46,10 +46,10 @@ func noneStyled(_ pType: NSPasteboard.PasteboardType) -> Bool {
 func filterPasteboard() {
     
     let p = NSPasteboard.general
-    let original = p.types?.map { ($0, p.data(forType: $0)) }
+    let original = p.types?.map { (p.data(forType: $0), $0) }
     
     p.clearContents()
     original?
-        .filter { noneStyled($0.0) }
-        .forEach { p.setData($0.1, forType: $0.0) }
+        .filter { noneStyledType($0.1) }
+        .forEach { p.setData($0.0, forType: $0.1) }
 }
