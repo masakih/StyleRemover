@@ -87,6 +87,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F47F3D3F23DD2EAB00BC820B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F48D38E023CDF96F00799A3D /* ClipboardFilter.swift */,
+				F48D38E223CDFE4A00799A3D /* Configuration.swift */,
+				F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */,
+				F48D38D823CDDDAB00799A3D /* StatusBar.swift */,
+				F48D38DA23CDDDE400799A3D /* StatusItem.swift */,
+				F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */,
+				F4A603A223D7453E00E73A91 /* OnOffItem.swift */,
+				F4A6037223D3F74C00E73A91 /* PreferenceItem.swift */,
+				F48D38DC23CDDE6100799A3D /* QuitItem.swift */,
+				F48D38EA23CF2E2C00799A3D /* ApplicationInfo.swift */,
+				F4A6036E23D3F0E900E73A91 /* PreferencePanelController.swift */,
+				F4A6037023D3F5CF00E73A91 /* ApplicationDataRow.swift */,
+				F4A6037623D40E6800E73A91 /* Folders.swift */,
+				F47F3D3B23DD283B00BC820B /* Localizable.swift */,
+				F47F3D3D23DD287100BC820B /* LocalizedStrings.swift */,
+				F4A6036C23D3F00100E73A91 /* UserDefaults-Extensions.swift */,
+				F4A6037423D3F86C00E73A91 /* ActionPublisher.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F47F3D4023DD2EDF00BC820B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F48D38BE23CDDBED00799A3D /* Assets.xcassets */,
+				F48D38DE23CDE6BF00799A3D /* MainMenu.xib */,
+				F4A6036A23D3EE5900E73A91 /* PreferencePanel.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F48D38B023CDDBEA00799A3D = {
 			isa = PBXGroup;
 			children = (
@@ -108,26 +142,8 @@
 		F48D38BB23CDDBEA00799A3D /* StyleRemover */ = {
 			isa = PBXGroup;
 			children = (
-				F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */,
-				F48D38D823CDDDAB00799A3D /* StatusBar.swift */,
-				F48D38DA23CDDDE400799A3D /* StatusItem.swift */,
-				F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */,
-				F4A603A223D7453E00E73A91 /* OnOffItem.swift */,
-				F4A6037223D3F74C00E73A91 /* PreferenceItem.swift */,
-				F48D38DC23CDDE6100799A3D /* QuitItem.swift */,
-				F48D38EA23CF2E2C00799A3D /* ApplicationInfo.swift */,
-				F4A6036C23D3F00100E73A91 /* UserDefaults-Extensions.swift */,
-				F4A6036A23D3EE5900E73A91 /* PreferencePanel.xib */,
-				F4A6036E23D3F0E900E73A91 /* PreferencePanelController.swift */,
-				F4A6037023D3F5CF00E73A91 /* ApplicationDataRow.swift */,
-				F48D38E023CDF96F00799A3D /* ClipboardFilter.swift */,
-				F4A6037623D40E6800E73A91 /* Folders.swift */,
-				F48D38E223CDFE4A00799A3D /* Configuration.swift */,
-				F4A6037423D3F86C00E73A91 /* ActionPublisher.swift */,
-				F47F3D3B23DD283B00BC820B /* Localizable.swift */,
-				F47F3D3D23DD287100BC820B /* LocalizedStrings.swift */,
-				F48D38DE23CDE6BF00799A3D /* MainMenu.xib */,
-				F48D38BE23CDDBED00799A3D /* Assets.xcassets */,
+				F47F3D3F23DD2EAB00BC820B /* Sources */,
+				F47F3D4023DD2EDF00BC820B /* Resources */,
 				F48D38C323CDDBED00799A3D /* Info.plist */,
 				F48D38C423CDDBED00799A3D /* StyleRemover.entitlements */,
 			);
