@@ -16,7 +16,7 @@ extension LocalizedStrings {
     static let statusOffFormat = LocalizedString("%@: Off", comment: "MenunItem: Status Off")
     
     static let turnOnFormat = LocalizedString("Turn %@ On", comment: "MenunItem: Turn On")
-    static let turnOffFormat = LocalizedString("Turn %@ Off", comment: "Turn Off")
+    static let turnOffFormat = LocalizedString("Turn %@ Off", comment: "MenunItem: Turn Off")
     
     static let preference = LocalizedString("Preference...", comment: "MenunItem: Preference")
     
