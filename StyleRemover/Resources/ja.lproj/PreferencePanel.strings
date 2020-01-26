@@ -1,0 +1,12 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4N6-mm-CDS"; */
+"4N6-mm-CDS.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Remove styled text when switch to below applications."; ObjectID = "4kT-zu-0bq"; */
+"4kT-zu-0bq.title" = "以下のアプリケーションに切り替えた時にスタイルテキストを削除します。";
+
+/* Class = "NSWindow"; title = "Preference"; ObjectID = "QvC-M9-y7g"; */
+"QvC-M9-y7g.title" = "環境設定";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "UdF-y1-WlS"; */
+"UdF-y1-WlS.title" = "Table View Cell";
