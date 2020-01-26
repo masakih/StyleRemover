@@ -10,7 +10,7 @@ import Foundation
 import Combine
 
 private let applicationDataKey = "Application Data"
-private let isEnablbedKey = "Is Enabled"
+private let isEnabledKey = "Is Enabled"
 
 extension UserDefaults {
     
@@ -19,7 +19,7 @@ extension UserDefaults {
         UserDefaults.standard.register(defaults:
             [
                 applicationDataKey: ["com.apple.TextEdit"],
-                isEnablbedKey: true,
+                isEnabledKey: true,
             ]
         )
     }
@@ -42,12 +42,12 @@ extension UserDefaults {
         
         get {
             
-            bool(forKey: isEnablbedKey)
+            bool(forKey: isEnabledKey)
         }
         
         set {
             
-            set(newValue, forKey: isEnablbedKey)
+            set(newValue, forKey: isEnabledKey)
         }
     }
 }
