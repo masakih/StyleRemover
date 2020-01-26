@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F46E7A0923DD38E000AC03FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F46E7A0723DD38DF00AC03FB /* InfoPlist.strings */; };
 		F47F3D3A23DD142E00BC820B /* RemoverStatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */; };
 		F47F3D3C23DD283B00BC820B /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F3D3B23DD283B00BC820B /* Localizable.swift */; };
 		F47F3D3E23DD287100BC820B /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F3D3D23DD287100BC820B /* LocalizedStrings.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F46E7A0823DD38DF00AC03FB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoverStatusItem.swift; sourceTree = "<group>"; };
 		F47F3D3B23DD283B00BC820B /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		F47F3D3D23DD287100BC820B /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		F47F3D4023DD2EDF00BC820B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F46E7A0723DD38DF00AC03FB /* InfoPlist.strings */,
 				F47F3D4B23DD339B00BC820B /* Localizable.strings */,
 				F47F3D4823DD339300BC820B /* Localizable.strings.sed */,
 				F48D38BE23CDDBED00799A3D /* Assets.xcassets */,
@@ -252,6 +255,7 @@
 				F48D38BF23CDDBED00799A3D /* Assets.xcassets in Resources */,
 				F47F3D4123DD2FC800BC820B /* MainMenu.xib in Resources */,
 				F47F3D4423DD2FCE00BC820B /* PreferencePanel.xib in Resources */,
+				F46E7A0923DD38E000AC03FB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +335,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F46E7A0723DD38DF00AC03FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F46E7A0823DD38DF00AC03FB /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F47F3D4323DD2FC800BC820B /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
