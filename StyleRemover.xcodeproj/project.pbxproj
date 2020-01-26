@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F47F3D3A23DD142E00BC820B /* RemoverStatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */; };
+		F47F3D3C23DD283B00BC820B /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F3D3B23DD283B00BC820B /* Localizable.swift */; };
+		F47F3D3E23DD287100BC820B /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F3D3D23DD287100BC820B /* LocalizedStrings.swift */; };
 		F48D38BD23CDDBEA00799A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */; };
 		F48D38BF23CDDBED00799A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48D38BE23CDDBED00799A3D /* Assets.xcassets */; };
 		F48D38CE23CDDBEE00799A3D /* StyleRemoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D38CD23CDDBEE00799A3D /* StyleRemoverTests.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoverStatusItem.swift; sourceTree = "<group>"; };
+		F47F3D3B23DD283B00BC820B /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		F47F3D3D23DD287100BC820B /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		F48D38B923CDDBEA00799A3D /* StyleRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F48D38BE23CDDBED00799A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				F4A6037623D40E6800E73A91 /* Folders.swift */,
 				F48D38E223CDFE4A00799A3D /* Configuration.swift */,
 				F4A6037423D3F86C00E73A91 /* ActionPublisher.swift */,
+				F47F3D3B23DD283B00BC820B /* Localizable.swift */,
+				F47F3D3D23DD287100BC820B /* LocalizedStrings.swift */,
 				F48D38DE23CDE6BF00799A3D /* MainMenu.xib */,
 				F48D38BE23CDDBED00799A3D /* Assets.xcassets */,
 				F48D38C323CDDBED00799A3D /* Info.plist */,
@@ -249,9 +255,11 @@
 				F48D38BD23CDDBEA00799A3D /* AppDelegate.swift in Sources */,
 				F4A6036D23D3F00100E73A91 /* UserDefaults-Extensions.swift in Sources */,
 				F4A6037123D3F5CF00E73A91 /* ApplicationDataRow.swift in Sources */,
+				F47F3D3E23DD287100BC820B /* LocalizedStrings.swift in Sources */,
 				F48D38D923CDDDAB00799A3D /* StatusBar.swift in Sources */,
 				F48D38DD23CDDE6100799A3D /* QuitItem.swift in Sources */,
 				F4A6036F23D3F0E900E73A91 /* PreferencePanelController.swift in Sources */,
+				F47F3D3C23DD283B00BC820B /* Localizable.swift in Sources */,
 				F48D38E123CDF96F00799A3D /* ClipboardFilter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

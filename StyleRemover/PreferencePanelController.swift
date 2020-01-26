@@ -81,8 +81,8 @@ class PreferencePanelController: NSWindowController {
         let openPanel = NSOpenPanel()
         openPanel.directoryURL = Folders().applicationFolder
         openPanel.allowedFileTypes = ["app"]
-        openPanel.prompt = "Choose"
-        openPanel.message = "Choose Target Application"
+        openPanel.prompt = LocalizedStrings.choose.string
+        openPanel.message = LocalizedStrings.message.string
         openPanel.delegate = self
         
         openPanel.beginSheetModal(for: window) { response in

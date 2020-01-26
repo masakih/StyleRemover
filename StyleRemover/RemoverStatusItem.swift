@@ -17,7 +17,9 @@ final class RemoverStatusItem: StatusItem {
     
     private var title: String {
         
-        UserDefaults.standard.isEnabled ? "\(AppDelegate.appName): On" : "\(AppDelegate.appName): Off"
+        let format = UserDefaults.standard.isEnabled ? LocalizedStrings.statusOnFormat : LocalizedStrings.statusOffFormat
+        
+        return String(format: format.string, AppDelegate.appName)
     }
     
     init() {

@@ -17,8 +17,8 @@ struct QuitItem: StatusItem {
     
     init() {
         
-        let format = NSLocalizedString("Quit %@", comment: "Quit Menu Item")
-        menuItem.title = String(format: format, AppDelegate.appName)
+        let format = LocalizedStrings.quitFormat
+        menuItem.title = String(format: format.string, AppDelegate.appName)
         menuItem
             .actionPublisher()
             .sink { _ in NSApplication.shared.terminate(nil) }

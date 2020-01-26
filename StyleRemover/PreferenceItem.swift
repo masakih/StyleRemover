@@ -18,7 +18,7 @@ class PreferenceItem: StatusItem {
     
     init() {
         
-        menuItem.title = "Preference..."
+        menuItem.title = LocalizedStrings.preference.string
         menuItem
             .actionPublisher()
             .receive(on: DispatchQueue.main)

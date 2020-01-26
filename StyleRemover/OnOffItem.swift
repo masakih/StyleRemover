@@ -17,7 +17,9 @@ struct OnOffItem: StatusItem {
     
     private var title: String {
                 
-        UserDefaults.standard.isEnabled ? "Turn \(AppDelegate.appName) Off" : "Turn \(AppDelegate.appName) On"
+        let format = UserDefaults.standard.isEnabled ? LocalizedStrings.turnOffFormat : LocalizedStrings.turnOnFormat
+        
+        return String(format: format.string, AppDelegate.appName)
     }
     
     init() {
