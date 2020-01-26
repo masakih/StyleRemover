@@ -21,6 +21,7 @@ class StatusBar {
     init() {
         
         items = [
+            RemoverStatusItem(),
             OnOffItem(),
             SeparatorItem(),
             PreferenceItem(),

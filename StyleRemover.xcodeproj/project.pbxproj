@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F47F3D3A23DD142E00BC820B /* RemoverStatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */; };
 		F48D38BD23CDDBEA00799A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */; };
 		F48D38BF23CDDBED00799A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48D38BE23CDDBED00799A3D /* Assets.xcassets */; };
 		F48D38CE23CDDBEE00799A3D /* StyleRemoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D38CD23CDDBEE00799A3D /* StyleRemoverTests.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoverStatusItem.swift; sourceTree = "<group>"; };
 		F48D38B923CDDBEA00799A3D /* StyleRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F48D38BE23CDDBED00799A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				F48D38BC23CDDBEA00799A3D /* AppDelegate.swift */,
 				F48D38D823CDDDAB00799A3D /* StatusBar.swift */,
 				F48D38DA23CDDDE400799A3D /* StatusItem.swift */,
+				F47F3D3923DD142E00BC820B /* RemoverStatusItem.swift */,
 				F4A603A223D7453E00E73A91 /* OnOffItem.swift */,
 				F4A6037223D3F74C00E73A91 /* PreferenceItem.swift */,
 				F48D38DC23CDDE6100799A3D /* QuitItem.swift */,
@@ -242,6 +245,7 @@
 				F4A6037323D3F74C00E73A91 /* PreferenceItem.swift in Sources */,
 				F4A6037723D40E6800E73A91 /* Folders.swift in Sources */,
 				F48D38DB23CDDDE400799A3D /* StatusItem.swift in Sources */,
+				F47F3D3A23DD142E00BC820B /* RemoverStatusItem.swift in Sources */,
 				F48D38BD23CDDBEA00799A3D /* AppDelegate.swift in Sources */,
 				F4A6036D23D3F00100E73A91 /* UserDefaults-Extensions.swift in Sources */,
 				F4A6037123D3F5CF00E73A91 /* ApplicationDataRow.swift in Sources */,

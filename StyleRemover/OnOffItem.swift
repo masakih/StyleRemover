@@ -16,8 +16,8 @@ struct OnOffItem: StatusItem {
     private var cancellalbes: [AnyCancellable] = []
     
     private var title: String {
-        
-        UserDefaults.standard.isEnabled ? "Style remove: Enabled" : "Style remove: Disabled"
+                
+        UserDefaults.standard.isEnabled ? "Turn \(AppDelegate.appName) Off" : "Turn \(AppDelegate.appName) On"
     }
     
     init() {
@@ -27,19 +27,13 @@ struct OnOffItem: StatusItem {
             .sink(receiveValue: toggle)
             .store(in: &cancellalbes)
         
-        refreshItem()
+        menuItem.title = title
     }
     
     private func toggle(_: Any) {
         
         UserDefaults.standard.isEnabled.toggle()
         
-        refreshItem()
-    }
-    
-    private func refreshItem() {
-        
         menuItem.title = title
-        menuItem.state = UserDefaults.standard.isEnabled ? .on : .off
     }
 }
